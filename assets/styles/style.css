@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+ 
+* {
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #2C3639;
+  border-radius: 5rem;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: #3F4E4F;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+main {
+  padding: 20px;
+  display: flexbox;
+  gap: 1.5rem;
+}
+
+.heading{
+  text-align: center;
+  color:#DCD7C9;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.heading span{
+  padding-top: 3.5rem;
+  color:#A27B5C;
+  text-transform: uppercase;
+}
+
+h2 {
+  color:#fff;
+  padding-top: 2rem;
+}
+
+p{
+  color:#DCD7C9;
+}
+
+.review .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:2rem;
+}
+
+.review .box-container .box{
+  border:.1rem solid rgba(255,255,255,.3);
+  text-align: center;
+  padding:3rem 2rem;
+}
+
+.review .box-container .box p{
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color:#DCD7C9;
+  padding:2rem 0;
+}
+ 
+table {
+  color:#A27B5C;
+  padding-bottom: 2.5rem;
+}
+
+footer{
+  background:#2C3639;
+  text-align: center;
+  padding: 2rem;
+}
+
+.share{
+  padding:1rem 0;
+}
+
+.share a{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color:#fff;
+  border:.1rem solid rgba(255,255,255,.3);
+  margin:.3rem;
+  border-radius: 50%;
+}
+
+.share a:hover{
+  background-color:#A27B5C;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:2rem 0;
+  gap:1rem;
+}
+
+.links a{
+  padding:.7rem 2rem;
+  color:#DCD7C9;
+  border:.1rem solid rgba(255,255,255,.3);
+  font-size: 2rem;
+}
+
+.links a:hover{
+  background:#A27B5C;
+}
+
+.credit{
+  font-size: 1rem;
+  color:#DCD7C9;
+  font-weight: lighter;
+  padding:1.0rem;
+}
+
+.credit span{
+  color:#A27B5C;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5rem;
+  padding: 20px;
+  height: auto;
+  background:#2C3639;
+  flex: 5;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+ 
+@media screen and (max-width: 768px) {
+
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+  
+}
